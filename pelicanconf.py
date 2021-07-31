@@ -30,6 +30,11 @@ SOCIAL = (('github', 'https://github.com/bitloo'),)
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+USE_FOLDER_AS_CATEGORY = True
+DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = True
+DEFAULT_CATEGORY = 'program'
+
 #一页最大得文章数
 DEFAULT_PAGINATION = 5
 

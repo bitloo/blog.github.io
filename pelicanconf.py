@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'loop'
-SITENAME = "log of loop"
+SITENAME = "loop's log"
 #SITEURL = ''
 
 PATH = 'content'

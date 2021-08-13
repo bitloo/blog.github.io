@@ -3,7 +3,7 @@
 
 AUTHOR = 'Loop'
 SITENAME = "Loop's Blog"
-#SITEURL = ''
+SITEURL = 'https://blog.notgame.top/'
 
 PATH = 'content'
 
@@ -14,20 +14,18 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+FEED_RSS = "feeds/all.rss.xml"
 
 # Blogroll
-#LINKS = (('Pelican', 'https://getpelican.com/'),
-#         ('Python.org', 'https://www.python.org/'),
-#         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-#         ('You can modify those links in your config file', '#'),)
+LINKS = (('my gitee', 'https://gitee.com/xquid'),)
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/bitloo'),('gitee', 'https://gitee.com/xquid'),)
+SOCIAL = (('github', 'https://github.com/bitloo'),)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

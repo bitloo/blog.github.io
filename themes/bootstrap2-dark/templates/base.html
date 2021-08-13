@@ -67,18 +67,18 @@
           <div class="nav-collapse">
             <ul class="nav">
               {% for title, link in MENUITEMS %}
-                  <li><a href="{{ link }}">{{ title }}</a></li>
+                  <li><a href="{{ link }}"><i class="icon-book"></i>{{ title }}</a></li>
               {% endfor %}
               {% if DISPLAY_PAGES_ON_MENU %}
               {% for page in pages %}
-                <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                <li><a href="{{ SITEURL }}/{{ page.url }}"><i class="icon-book"></i>{{ page.title }}</a></li>
               {% endfor %}
                           <li class="divider-vertical"></li>
               {% endif %}
               {% for cat, null in categories %}
                   <li {% if cat == category %}class="active"{% endif %}>
                     <a href="{{ SITEURL }}/{{ cat.url }}">
-						<i class="icon-folder-open icon-large"></i>{{ cat }}
+						<i class="icon-book icon-large"></i>{{ cat }}
 					</a>
                   </li>
               {% endfor %}
@@ -109,15 +109,15 @@
 
       <hr>
 
-      <footer>
+      <!-- <footer>
         <address id="about">
                 Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
                                 which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
+        </address>
 
         <p>The theme is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
                    and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
-      </footer>
+      </footer> -->
 
     </div><!--/.fluid-container-->
 

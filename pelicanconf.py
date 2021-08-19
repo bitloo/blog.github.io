@@ -74,3 +74,5 @@ PLUGINS = ["tag_cloud"]
 #tag_cloud
 TAG_CLOUD_SORTING = 'alphabetically'
 TAG_CLOUD_BADGE = True
+
+DISQUS_SITENAME = 'loopblog'

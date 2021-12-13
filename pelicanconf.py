@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-
 AUTHOR = 'Loop'
 SITENAME = "Loop's Blog"
 SITEURL = 'https://blog.notgame.top/'
@@ -25,7 +22,7 @@ FEED_RSS = "feeds/all.rss.xml"
 LINKS = (('my gitee', 'https://gitee.com/xquid'),)
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/bitloo'),)
+#SOCIAL = (('github', 'https://github.com/bitloo'),)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -33,7 +30,7 @@ SOCIAL = (('github', 'https://github.com/bitloo'),)
 # DISPLAY_CATEGORIES_ON_MENU = True
 # DISPLAY_PAGES_ON_MENU = True
 
-# #ä¸€é¡µæœ€å¤§å¾—æ–‡ç« æ•°
+# #Ò»Ò³×î´óµÃÎÄÕÂÊı
 # # Pagination
 DEFAULT_PAGINATION = 5
 # PAGINATION_PATTERNS = (
@@ -61,13 +58,13 @@ DEFAULT_PAGINATION = 5
 # AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 # AUTHORS_SAVE_AS = 'authors.html'
 
-#æŒ‰æ—¶é—´é¡ºåºæ’åºï¼ˆæ—¶é—´æœ€è¿‘çš„ä¼˜å…ˆï¼‰
+#°´Ê±¼äË³ĞòÅÅĞò£¨Ê±¼ä×î½üµÄÓÅÏÈ£©
 NEWEST_FIRST_ARCHIVES = True
 
-#ä¸»é¢˜ç›®å½•
-THEME = 'themes/bootstrap2-dark'
+#Ö÷ÌâÄ¿Â¼
+THEME = 'themes/voidy-bootstrap'
 
-#æ’ä»¶
+#²å¼ş
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["tag_cloud"]
 
@@ -75,4 +72,41 @@ PLUGINS = ["tag_cloud"]
 TAG_CLOUD_SORTING = 'alphabetically'
 TAG_CLOUD_BADGE = True
 
-DISQUS_SITENAME = 'loopblog'
+#DISQUS_SITENAME = 'loopblog'
+
+# -------------- VoidyBootstrap Settings -----------------------
+FONT_AWESOME_CDN_LINK = {
+      'href': 'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
+      'integrity': 'sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp',
+      'crossorigin': 'anonymous'
+  }
+#SITESUBTITLE ='Sub-title that goes underneath site name in jumbotron.'
+#SITETAG = "Text that's displayed in the title on the home page."
+
+# Extra stylesheets, for bootstrap overrides or additional styling.
+STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
+
+# Put taglist at end of articles, and use the default sharing button implementation.
+CUSTOM_ARTICLE_FOOTERS = ("taglist.html", )
+#CUSTOM_SCRIPTS_ARTICLE = "sharing_scripts.html"
+
+# Default sidebar template. Omit this setting for single column mode without sidebar.
+SIDEBAR = "sidebar.html"
+CUSTOM_SIDEBAR_MIDDLES = ("sb_links.html", "sb_tagcloud.html",)
+SIDEBAR_SIZE = 2
+#SIDEBAR_HIDE_CATEGORIES = True
+
+SOCIAL = (
+        # ('Google+', 'http://plus.google.com/userid',
+        #  'fa fa-google-plus-square fa-fw fa-lg'),
+        # ('Twitter', 'https://twitter.com/username',
+        #  'fa fa-twitter-square fa-fw fa-lg'),
+        # ('LinkedIn', 'http://linkedin-url',
+        #  'fa fa-linkedin-square fa-fw fa-lg'),
+        # ('BitBucket', 'http://bitbucket.org/username',
+        #  'fa fa-bitbucket-square fa-fw fa-lg'),
+        ('GitHub', 'https://github.com/bitloo',
+         'fa fa-github-square fa-fw fa-lg'),
+        )
+
+# -------------- VoidyBootstrap Settings -----------------------

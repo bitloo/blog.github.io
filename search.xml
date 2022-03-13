@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Aseprite画像素UI的一些建议</title>
-    <url>/2021/08/10/Aseprite%E7%94%BB%E5%83%8F%E7%B4%A0UI%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BB%BA%E8%AE%AE/</url>
-    <content><![CDATA[<ul>
-<li>使用一个大画布，把所有UI元素和图标都画在上面。<ul>
-<li>打开背景网格作为尺寸参考，这样能够方便把握Sprite的大小，以及后续导入Unity后的Sprite切割（aseprite不支持单独切割Sprite并导出，只能整个画布一起导出）。</li>
-<li>从整体上把握UI风格，保持一致。例如：圆角还是尖角？阴影还是平面？ 3D 还是 2D？透视角度？</li>
-</ul>
-</li>
-<li>事先决定好需要的UI元素和图标，用清单把它们列出来。<ul>
-<li>查看UI元素的网站：usability.gov。</li>
-</ul>
-</li>
-<li>使用垂直剖面线风格的阴影，不要使用抖动阴影（看起来会很脏）。</li>
-<li>在Sprite下方使用较暗、冷色调的像素线来达到3D效果。</li>
-<li>使用描边和阴影让UI和屏幕中的其他元素区分开来。<ul>
-<li>描边和阴影不要使用纯黑或者灰色，应该根据Sprite的颜色而决定。</li>
-</ul>
-</li>
-<li>使用非像素UI作为参考，并把它们抽象出来形成像素画。<ul>
-<li>参考图标的网站：flaticon.com。</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>美术</category>
-      </categories>
-      <tags>
-        <tag>像素画</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数据结构</title>
     <url>/2021/08/13/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h2 id="什么是数据结构？"><a href="#什么是数据结构？" class="headerlink" title="什么是数据结构？"></a>什么是数据结构？</h2><p>我们知道数据是存储在计算机的物理存储空间中的，这些空间不是无限的，是宝贵的。我们需要选择一种好的存储方式来存储数据。并且在需要进行大量数据处理的时候，处理的时间也是宝贵的，高效方便的数据再利用很重要。所以，我们需要研究数据结构。  </p>
@@ -125,60 +93,35 @@
       </tags>
   </entry>
   <entry>
-    <title>链表</title>
-    <url>/2021/08/27/%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[<h2 id="什么是链表？"><a href="#什么是链表？" class="headerlink" title="什么是链表？"></a>什么是链表？</h2><p>链表又叫单链表，是链式存储结构的线性表。在内存中是散乱随机存储的。<br>链表中的数据由结点表示，由两部分组成：</p>
-<ul>
-<li>数据本身，所在区域称为数据域</li>
-<li>指向直接后继元素的指针（C#中为引用），所在区域称为指针域</li>
+    <title>Aseprite画像素UI的一些建议</title>
+    <url>/2021/08/10/Aseprite%E7%94%BB%E5%83%8F%E7%B4%A0UI%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BB%BA%E8%AE%AE/</url>
+    <content><![CDATA[<ul>
+<li>使用一个大画布，把所有UI元素和图标都画在上面。<ul>
+<li>打开背景网格作为尺寸参考，这样能够方便把握Sprite的大小，以及后续导入Unity后的Sprite切割（aseprite不支持单独切割Sprite并导出，只能整个画布一起导出）。</li>
+<li>从整体上把握UI风格，保持一致。例如：圆角还是尖角？阴影还是平面？ 3D 还是 2D？透视角度？</li>
 </ul>
-<h2 id="头指针、头结点、首元结点是什么？"><a href="#头指针、头结点、首元结点是什么？" class="headerlink" title="头指针、头结点、首元结点是什么？"></a>头指针、头结点、首元结点是什么？</h2><p>一个链表光有结点还不完整。<br>一个完整的链表由以下几部分构成：</p>
-<ul>
-<li>头指针：永远指向链表第一个位置。用于指明链表的位置，便于找到链表并使用链表中的数据。</li>
-<li>结点：<ul>
-<li>头结点：没有数据的空结点，作为链表的第一个结点。不是必须有。</li>
-<li>首元结点：链表中第一个存有数据的结点。</li>
-<li>其他结点：链表中除以上结点以外的其他的结点。</li>
+</li>
+<li>事先决定好需要的UI元素和图标，用清单把它们列出来。<ul>
+<li>查看UI元素的网站：usability.gov。</li>
+</ul>
+</li>
+<li>使用垂直剖面线风格的阴影，不要使用抖动阴影（看起来会很脏）。</li>
+<li>在Sprite下方使用较暗、冷色调的像素线来达到3D效果。</li>
+<li>使用描边和阴影让UI和屏幕中的其他元素区分开来。<ul>
+<li>描边和阴影不要使用纯黑或者灰色，应该根据Sprite的颜色而决定。</li>
+</ul>
+</li>
+<li>使用非像素UI作为参考，并把它们抽象出来形成像素画。<ul>
+<li>参考图标的网站：flaticon.com。</li>
 </ul>
 </li>
 </ul>
-<p>链表中有头结点时，头指针指向头结点。没有头结点时，头指针指向首元结点。  </p>
-<h2 id="链表及其变种"><a href="#链表及其变种" class="headerlink" title="链表及其变种"></a>链表及其变种</h2><ul>
-<li>按照结点方向：单链表、双向链表</li>
-<li>按照是否循环：普通链表、循环链表</li>
-<li>按照是否带头结点：有头结点的、没有头结点的</li>
-<li>按照头结点位置：头结点在链表首、头结点在链表尾</li>
-</ul>
-<h2 id="链表的实现"><a href="#链表的实现" class="headerlink" title="链表的实现"></a>链表的实现</h2><p>这里以无头结点普通单链表为例。<br>普通单遍历链表有一个限制：只通过头指针开始遍历</p>
-<h3 id="结点"><a href="#结点" class="headerlink" title="结点"></a>结点</h3><p>首先实现链表的结点</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Node&lt;T&gt;</span><br><span class="line">&#123;</span><br><span class="line">    public T Elem;</span><br><span class="line">    public Node&lt;T&gt; Next;</span><br><span class="line"></span><br><span class="line">    public Node()</span><br><span class="line">    &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Node(T elem)</span><br><span class="line">    &#123;</span><br><span class="line">        Elem = elem;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Node(T elem, Node&lt;T&gt; next)</span><br><span class="line">    &#123;</span><br><span class="line">        Elem = elem;</span><br><span class="line">        Next = next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public override string ToString()</span><br><span class="line">    &#123;</span><br><span class="line">        return Elem.ToString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>链表的初始化</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">private Node&lt;T&gt; Head;</span><br><span class="line">private int count;</span><br><span class="line"></span><br><span class="line">public int Count &#123; get &#123; return count; &#125; &#125;</span><br><span class="line">public bool IsEmpty &#123; get &#123; return count &lt;= 0; &#125; &#125;</span><br><span class="line"></span><br><span class="line">public SingleLinkList()</span><br><span class="line">&#123;</span><br><span class="line">    Head = null;</span><br><span class="line">    count = 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 插入</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void Insert(int index, T elem)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt; count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentException(&quot;非法索引&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    if (index == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        Head = new Node&lt;T&gt;(elem, Head);</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; tmp = Head;</span><br><span class="line">        for (int i = 0; i &lt; index - 1; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            tmp = tmp.Next;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp.Next = new Node&lt;T&gt;(elem, tmp.Next);</span><br><span class="line">    &#125;</span><br><span class="line">    count++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 从头部插入</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void AddFirst(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    Insert(0, elem);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 从尾部插入</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void AddLast(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    Insert(count, elem);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="移除"><a href="#移除" class="headerlink" title="移除"></a>移除</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号移除</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T RemoveAt(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt;= count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (index == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; node = Head;</span><br><span class="line">        Head = Head.Next;</span><br><span class="line">        count--;</span><br><span class="line">        return node.Elem;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; tmp = Head;</span><br><span class="line">        for (int i = 0; i &lt; index - 1; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            tmp = tmp.Next;</span><br><span class="line">        &#125;</span><br><span class="line">        Node&lt;T&gt; node = tmp.Next;</span><br><span class="line">        tmp.Next = node.Next;</span><br><span class="line">        count--;</span><br><span class="line">        return node.Elem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号从头部移除</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T RemoveFirst()</span><br><span class="line">&#123;</span><br><span class="line">    return RemoveAt(0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号从尾部移除</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T RemoveLast()</span><br><span class="line">&#123;</span><br><span class="line">    return RemoveAt(count - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 移除元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void Remove(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    if (Head == null)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (Head.Elem.Equals(elem))</span><br><span class="line">    &#123;</span><br><span class="line">        Head = Head.Next;</span><br><span class="line">        count--;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; cur = Head;</span><br><span class="line">        Node&lt;T&gt; pre = null;</span><br><span class="line">        while (cur != null)</span><br><span class="line">        &#123;</span><br><span class="line">            if (cur.Elem.Equals(elem))</span><br><span class="line">            &#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = cur.Next;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (cur != null)</span><br><span class="line">        &#123;</span><br><span class="line">            pre.Next = cur.Next;</span><br><span class="line">            count--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号设置元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void Set(int index, T elem)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt;= count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line">    Node&lt;T&gt; tmp = Head;</span><br><span class="line">    for (int i = 0; i &lt; index; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp = tmp.Next;</span><br><span class="line">    &#125;</span><br><span class="line">    tmp.Elem = elem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 获取链表中的元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T Get(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt;= count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line">    Node&lt;T&gt; tmp = Head;</span><br><span class="line">    for (int i = 0; i &lt; index; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp = tmp.Next;</span><br><span class="line">    &#125;</span><br><span class="line">    return tmp.Elem;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 获取第一个元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T GetFirst()</span><br><span class="line">&#123;</span><br><span class="line">    return Get(0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 获取最后一个元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T GetLast()</span><br><span class="line">&#123;</span><br><span class="line">    return Get(count - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 是否包含某个元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public bool Contains(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    for (Node&lt;T&gt; node = Head; node != null; node = node.Next)</span><br><span class="line">    &#123;</span><br><span class="line">        if (node.Elem.Equals(elem))</span><br><span class="line">        &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>链表的反转，有4中实现方式：</p>
-<ul>
-<li>迭代反转法</li>
-<li>递归反转法</li>
-<li>就地逆置法</li>
-<li>头插法</li>
-</ul>
-<p>这里使用迭代法实现了一遍</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 链表反转，迭代反转法</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">public void Reverse()</span><br><span class="line">&#123;</span><br><span class="line">    if (Head == null || Head.Next == null)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Node&lt;T&gt; begin = null;</span><br><span class="line">    Node&lt;T&gt; mid = Head;</span><br><span class="line">    Node&lt;T&gt; end = mid.Next;</span><br><span class="line">    while (true)</span><br><span class="line">    &#123;</span><br><span class="line">        mid.Next = begin;</span><br><span class="line"></span><br><span class="line">        if (end == null)</span><br><span class="line">        &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        begin = mid;</span><br><span class="line">        mid = end;</span><br><span class="line">        end = end.Next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Head = mid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
-        <category>程序</category>
+        <category>美术</category>
       </categories>
       <tags>
-        <tag>数据结构</tag>
+        <tag>像素画</tag>
       </tags>
   </entry>
   <entry>
@@ -239,6 +182,63 @@
 
 <h4 id="动态缩减"><a href="#动态缩减" class="headerlink" title="动态缩减"></a>动态缩减</h4><p>当表的长度很小时，空闲的空间不小于1个segment长度时，空间就比较浪费了，此时就需要缩减数组空间。<br>但是如果当空闲长度刚好不小于1个segment时就缩减数组空间，之后再增加空间，就会重新分配空间。在这个临界值附近频繁发生增删数据的话，就会频繁申请内存，效率低下。所以，我们会在刚好达到这个临界值时再移除一次才会缩减数组空间，来减少上述情况的发生。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">private void CutDownList()</span><br><span class="line">&#123;</span><br><span class="line">    int newLength = list.Length - segmentLength;</span><br><span class="line">    int[] tmp = list;</span><br><span class="line">    list = new int[newLength];</span><br><span class="line">    for (int i = 0; i &lt; count; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        list[i] = tmp[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public int RemoveAt(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (IsOutOfRange(index))</span><br><span class="line">    &#123;</span><br><span class="line">        throw new IndexOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line">    if (IsEmpty)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new Exception(&quot;List is empty.&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int elem = list[index];</span><br><span class="line">    for (int i = index; i &lt; count - 1; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        list[i] = list[i + 1];</span><br><span class="line">    &#125;</span><br><span class="line">    count--;</span><br><span class="line"></span><br><span class="line">    if (count &lt; list.Length - segmentLength)</span><br><span class="line">    &#123;</span><br><span class="line">        //为什么不是count &lt;= list.Length - segmentLength?</span><br><span class="line">        //让元素数量比list.Length - segmentLength再小一位，当下次增加元素时，不会立即扩展而申请内存</span><br><span class="line">        //可以防止在此临界值的时候频繁申请内存</span><br><span class="line">        CutDownList();</span><br><span class="line">    &#125;</span><br><span class="line">    return elem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>链表</title>
+    <url>/2021/08/27/%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[<h2 id="什么是链表？"><a href="#什么是链表？" class="headerlink" title="什么是链表？"></a>什么是链表？</h2><p>链表又叫单链表，是链式存储结构的线性表。在内存中是散乱随机存储的。<br>链表中的数据由结点表示，由两部分组成：</p>
+<ul>
+<li>数据本身，所在区域称为数据域</li>
+<li>指向直接后继元素的指针（C#中为引用），所在区域称为指针域</li>
+</ul>
+<h2 id="头指针、头结点、首元结点是什么？"><a href="#头指针、头结点、首元结点是什么？" class="headerlink" title="头指针、头结点、首元结点是什么？"></a>头指针、头结点、首元结点是什么？</h2><p>一个链表光有结点还不完整。<br>一个完整的链表由以下几部分构成：</p>
+<ul>
+<li>头指针：永远指向链表第一个位置。用于指明链表的位置，便于找到链表并使用链表中的数据。</li>
+<li>结点：<ul>
+<li>头结点：没有数据的空结点，作为链表的第一个结点。不是必须有。</li>
+<li>首元结点：链表中第一个存有数据的结点。</li>
+<li>其他结点：链表中除以上结点以外的其他的结点。</li>
+</ul>
+</li>
+</ul>
+<p>链表中有头结点时，头指针指向头结点。没有头结点时，头指针指向首元结点。  </p>
+<h2 id="链表及其变种"><a href="#链表及其变种" class="headerlink" title="链表及其变种"></a>链表及其变种</h2><ul>
+<li>按照结点方向：单链表、双向链表</li>
+<li>按照是否循环：普通链表、循环链表</li>
+<li>按照是否带头结点：有头结点的、没有头结点的</li>
+<li>按照头结点位置：头结点在链表首、头结点在链表尾</li>
+</ul>
+<h2 id="链表的实现"><a href="#链表的实现" class="headerlink" title="链表的实现"></a>链表的实现</h2><p>这里以无头结点普通单链表为例。<br>普通单遍历链表有一个限制：只通过头指针开始遍历</p>
+<h3 id="结点"><a href="#结点" class="headerlink" title="结点"></a>结点</h3><p>首先实现链表的结点</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Node&lt;T&gt;</span><br><span class="line">&#123;</span><br><span class="line">    public T Elem;</span><br><span class="line">    public Node&lt;T&gt; Next;</span><br><span class="line"></span><br><span class="line">    public Node()</span><br><span class="line">    &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Node(T elem)</span><br><span class="line">    &#123;</span><br><span class="line">        Elem = elem;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public Node(T elem, Node&lt;T&gt; next)</span><br><span class="line">    &#123;</span><br><span class="line">        Elem = elem;</span><br><span class="line">        Next = next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public override string ToString()</span><br><span class="line">    &#123;</span><br><span class="line">        return Elem.ToString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>链表的初始化</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">private Node&lt;T&gt; Head;</span><br><span class="line">private int count;</span><br><span class="line"></span><br><span class="line">public int Count &#123; get &#123; return count; &#125; &#125;</span><br><span class="line">public bool IsEmpty &#123; get &#123; return count &lt;= 0; &#125; &#125;</span><br><span class="line"></span><br><span class="line">public SingleLinkList()</span><br><span class="line">&#123;</span><br><span class="line">    Head = null;</span><br><span class="line">    count = 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 插入</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void Insert(int index, T elem)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt; count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentException(&quot;非法索引&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    if (index == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        Head = new Node&lt;T&gt;(elem, Head);</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; tmp = Head;</span><br><span class="line">        for (int i = 0; i &lt; index - 1; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            tmp = tmp.Next;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp.Next = new Node&lt;T&gt;(elem, tmp.Next);</span><br><span class="line">    &#125;</span><br><span class="line">    count++;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 从头部插入</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void AddFirst(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    Insert(0, elem);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 从尾部插入</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void AddLast(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    Insert(count, elem);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="移除"><a href="#移除" class="headerlink" title="移除"></a>移除</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号移除</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T RemoveAt(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt;= count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (index == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; node = Head;</span><br><span class="line">        Head = Head.Next;</span><br><span class="line">        count--;</span><br><span class="line">        return node.Elem;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; tmp = Head;</span><br><span class="line">        for (int i = 0; i &lt; index - 1; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            tmp = tmp.Next;</span><br><span class="line">        &#125;</span><br><span class="line">        Node&lt;T&gt; node = tmp.Next;</span><br><span class="line">        tmp.Next = node.Next;</span><br><span class="line">        count--;</span><br><span class="line">        return node.Elem;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号从头部移除</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T RemoveFirst()</span><br><span class="line">&#123;</span><br><span class="line">    return RemoveAt(0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号从尾部移除</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T RemoveLast()</span><br><span class="line">&#123;</span><br><span class="line">    return RemoveAt(count - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 移除元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void Remove(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    if (Head == null)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (Head.Elem.Equals(elem))</span><br><span class="line">    &#123;</span><br><span class="line">        Head = Head.Next;</span><br><span class="line">        count--;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        Node&lt;T&gt; cur = Head;</span><br><span class="line">        Node&lt;T&gt; pre = null;</span><br><span class="line">        while (cur != null)</span><br><span class="line">        &#123;</span><br><span class="line">            if (cur.Elem.Equals(elem))</span><br><span class="line">            &#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = cur.Next;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (cur != null)</span><br><span class="line">        &#123;</span><br><span class="line">            pre.Next = cur.Next;</span><br><span class="line">            count--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 根据索引号设置元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">public void Set(int index, T elem)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt;= count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line">    Node&lt;T&gt; tmp = Head;</span><br><span class="line">    for (int i = 0; i &lt; index; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp = tmp.Next;</span><br><span class="line">    &#125;</span><br><span class="line">    tmp.Elem = elem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 获取链表中的元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;index&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T Get(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt; 0 || index &gt;= count)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new ArgumentOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line">    Node&lt;T&gt; tmp = Head;</span><br><span class="line">    for (int i = 0; i &lt; index; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        tmp = tmp.Next;</span><br><span class="line">    &#125;</span><br><span class="line">    return tmp.Elem;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 获取第一个元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T GetFirst()</span><br><span class="line">&#123;</span><br><span class="line">    return Get(0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 获取最后一个元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public T GetLast()</span><br><span class="line">&#123;</span><br><span class="line">    return Get(count - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 是否包含某个元素</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">/// &lt;param name=&quot;elem&quot;&gt;&lt;/param&gt;</span><br><span class="line">/// &lt;returns&gt;&lt;/returns&gt;</span><br><span class="line">public bool Contains(T elem)</span><br><span class="line">&#123;</span><br><span class="line">    for (Node&lt;T&gt; node = Head; node != null; node = node.Next)</span><br><span class="line">    &#123;</span><br><span class="line">        if (node.Elem.Equals(elem))</span><br><span class="line">        &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>链表的反转，有4中实现方式：</p>
+<ul>
+<li>迭代反转法</li>
+<li>递归反转法</li>
+<li>就地逆置法</li>
+<li>头插法</li>
+</ul>
+<p>这里使用迭代法实现了一遍</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 链表反转，迭代反转法</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">public void Reverse()</span><br><span class="line">&#123;</span><br><span class="line">    if (Head == null || Head.Next == null)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Node&lt;T&gt; begin = null;</span><br><span class="line">    Node&lt;T&gt; mid = Head;</span><br><span class="line">    Node&lt;T&gt; end = mid.Next;</span><br><span class="line">    while (true)</span><br><span class="line">    &#123;</span><br><span class="line">        mid.Next = begin;</span><br><span class="line"></span><br><span class="line">        if (end == null)</span><br><span class="line">        &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        begin = mid;</span><br><span class="line">        mid = end;</span><br><span class="line">        end = end.Next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Head = mid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
         <category>程序</category>
       </categories>

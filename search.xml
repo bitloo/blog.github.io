@@ -25,6 +25,9 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>美术</category>
+      </categories>
       <tags>
         <tag>像素画</tag>
       </tags>
@@ -47,6 +50,9 @@
 </ul>
 <p>有大量数据需要遍历查询的，就选择顺序存储结构；需要频繁增加和删除数据的，就选择链式存储结构。<br>通过上面两个点，很容易确定一个数据结构。</p>
 ]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
       <tags>
         <tag>数据结构</tag>
       </tags>
@@ -81,6 +87,9 @@
 <h2 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h2><p>通常，影响算法空间复杂度最大的是运行时申请的临时存储空间。和时间复杂度类似，算法的空间复杂度也用大O记法表示。  </p>
 <p>如果程序所占用的空间，不随某个变量n的大小变化，也就是他的存储空间是固定的，那么这个算法的空间复杂度为O(1)。<br>如果随着n增大，程序申请的空间成线性增长，则空间复杂度为O(n)。<br>同理，成平方关系增长，就是O( n^2 )；成立方关系增长，就是O(n^3)。</p>
 ]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
       <tags>
         <tag>数据结构</tag>
         <tag>算法</tag>
@@ -108,6 +117,9 @@
 
 <h3 id="链栈"><a href="#链栈" class="headerlink" title="链栈"></a>链栈</h3><p>链栈采用单链表实现。<br>我们知道，从单链表的表头添加和移除元素是最快的，为<code>O(1)</code>。因此，入栈操作就是从表头添加元素，出栈操作就是从表头移除元素。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">using System.Text;</span><br><span class="line"></span><br><span class="line">public class LinkStack&lt;T&gt; : IStack&lt;T&gt;</span><br><span class="line">&#123;</span><br><span class="line">    private SingleLinkList&lt;T&gt; list;</span><br><span class="line">    public int Count &#123; get &#123; return list.Count; &#125; &#125;</span><br><span class="line"></span><br><span class="line">    public bool IsEmpty &#123; get &#123; return list.Count &lt;= 0; &#125; &#125;</span><br><span class="line"></span><br><span class="line">    public LinkStack()</span><br><span class="line">    &#123;</span><br><span class="line">        list = new SingleLinkList&lt;T&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void Push(T elem)</span><br><span class="line">    &#123;</span><br><span class="line">        list.AddFirst(elem);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public T Pop()</span><br><span class="line">    &#123;</span><br><span class="line">        return list.RemoveFirst();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public T Peek()</span><br><span class="line">    &#123;</span><br><span class="line">        return list.GetFirst();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public override string ToString()</span><br><span class="line">    &#123;</span><br><span class="line">        StringBuilder sb = new StringBuilder();</span><br><span class="line">        sb.Append(&quot;Top:&quot;);</span><br><span class="line">        for (int i = 0; i &lt; list.Count; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            var elem = list.Get(i);</span><br><span class="line">            sb.Append(elem.ToString());</span><br><span class="line">            sb.Append(&quot;-&gt;&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">        sb.Append(&quot;Null&quot;);</span><br><span class="line">        return sb.ToString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
       <tags>
         <tag>数据结构</tag>
       </tags>
@@ -162,6 +174,9 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/// &lt;summary&gt;</span><br><span class="line">/// 链表反转，迭代反转法</span><br><span class="line">/// &lt;/summary&gt;</span><br><span class="line">public void Reverse()</span><br><span class="line">&#123;</span><br><span class="line">    if (Head == null || Head.Next == null)</span><br><span class="line">    &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Node&lt;T&gt; begin = null;</span><br><span class="line">    Node&lt;T&gt; mid = Head;</span><br><span class="line">    Node&lt;T&gt; end = mid.Next;</span><br><span class="line">    while (true)</span><br><span class="line">    &#123;</span><br><span class="line">        mid.Next = begin;</span><br><span class="line"></span><br><span class="line">        if (end == null)</span><br><span class="line">        &#123;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        begin = mid;</span><br><span class="line">        mid = end;</span><br><span class="line">        end = end.Next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Head = mid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
       <tags>
         <tag>数据结构</tag>
       </tags>
@@ -224,6 +239,9 @@
 
 <h4 id="动态缩减"><a href="#动态缩减" class="headerlink" title="动态缩减"></a>动态缩减</h4><p>当表的长度很小时，空闲的空间不小于1个segment长度时，空间就比较浪费了，此时就需要缩减数组空间。<br>但是如果当空闲长度刚好不小于1个segment时就缩减数组空间，之后再增加空间，就会重新分配空间。在这个临界值附近频繁发生增删数据的话，就会频繁申请内存，效率低下。所以，我们会在刚好达到这个临界值时再移除一次才会缩减数组空间，来减少上述情况的发生。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">private void CutDownList()</span><br><span class="line">&#123;</span><br><span class="line">    int newLength = list.Length - segmentLength;</span><br><span class="line">    int[] tmp = list;</span><br><span class="line">    list = new int[newLength];</span><br><span class="line">    for (int i = 0; i &lt; count; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        list[i] = tmp[i];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public int RemoveAt(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (IsOutOfRange(index))</span><br><span class="line">    &#123;</span><br><span class="line">        throw new IndexOutOfRangeException();</span><br><span class="line">    &#125;</span><br><span class="line">    if (IsEmpty)</span><br><span class="line">    &#123;</span><br><span class="line">        throw new Exception(&quot;List is empty.&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int elem = list[index];</span><br><span class="line">    for (int i = index; i &lt; count - 1; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        list[i] = list[i + 1];</span><br><span class="line">    &#125;</span><br><span class="line">    count--;</span><br><span class="line"></span><br><span class="line">    if (count &lt; list.Length - segmentLength)</span><br><span class="line">    &#123;</span><br><span class="line">        //为什么不是count &lt;= list.Length - segmentLength?</span><br><span class="line">        //让元素数量比list.Length - segmentLength再小一位，当下次增加元素时，不会立即扩展而申请内存</span><br><span class="line">        //可以防止在此临界值的时候频繁申请内存</span><br><span class="line">        CutDownList();</span><br><span class="line">    &#125;</span><br><span class="line">    return elem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>程序</category>
+      </categories>
       <tags>
         <tag>数据结构</tag>
       </tags>
